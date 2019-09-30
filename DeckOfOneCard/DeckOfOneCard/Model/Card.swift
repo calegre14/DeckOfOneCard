@@ -9,27 +9,11 @@
 import Foundation
 
 struct TopLevelDictionary: Codable {
-    /**
-     JSON
-     success : true
-     deck_id : "o7j6smaz1m3e"
-     remaining : 51
-     cards
-     */
-    let success: Bool
-    let deck_id: String
-    let remaining: Int
+    //The Top level dictionary is the first dictionary I expect to decode with my initial data task. To view the JSON hierarchy - test the URL from the API decumentation and checking in a JSON viewer
     let cards: [Card]
 }
 
 struct Card: Codable {
-    /**
-     cards
-     value : "5"
-     image : "https://deckofcardsapi.com/static/img/5C.png"
-     suit : "CLUBS"
-     */
-    let value: String
+    //This image String is the string representation of the URL where the card image is found - Need card before was can access this property
     let image: String
-    let suit: String
 }

@@ -15,11 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        CardContrller.drawACard(numberOfCards: 1) { (cards) in
-            for card in cards {
-                print(card.suit)
-            }
-        }
         return true
     }
 
